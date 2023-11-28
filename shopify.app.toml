@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "arbido-trial-v01"
+client_id = "650670a6294d998cc14c4b76e11d7257"
+application_url = "https://economic-opposite-additionally-bi.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://economic-opposite-additionally-bi.trycloudflare.com/auth/callback",
+  "https://economic-opposite-additionally-bi.trycloudflare.com/auth/shopify/callback",
+  "https://economic-opposite-additionally-bi.trycloudflare.com/api/auth/callback",
+  "https://economic-opposite-additionally-bi.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "arbido-trial-v01.myshopify.com"
